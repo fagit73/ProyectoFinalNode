@@ -24,7 +24,9 @@ app.use((req, res) => {
   res.status(404).json({ error: "Ruta no encontrada" });
 });
 
+// Puerto que Render asigna o 3001 para local
 const PORT = process.env.PORT || 3001;
+
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
